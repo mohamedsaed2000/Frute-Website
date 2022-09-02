@@ -33,7 +33,7 @@ a{text-decoration: none;}
 
 .btn:hover{background: var(--orange);   color:#fff;}
 
-.heading{text-align: center;    font-size: 60px;   
+.heading{text-align: center;    font-size: 50px;   
          margin-bottom: 40px;   color: var(--black);}
 
 .heading span{background: var(--orange);   color: #fff;
@@ -68,7 +68,7 @@ a{text-decoration: none;}
 
 @media (max-width:768px){#menu-btn{display: inline-block;}}
 
-@media (max-width:768px){.header .logo{font-size: 36px;}
+@media (max-width:768px){.header .logo{font-size: 30px;}
 
     .header .navbar{position: absolute;  top: 110%;    background: #fff;
 		            right: -110%;        width: 300px; 
@@ -76,11 +76,11 @@ a{text-decoration: none;}
 
     .header .navbar.active{right: 0;   transition: var(--tran) linear;}
 
-    .header .navbar a{color:var(--black);   margin: 20px;   font-size: 24px;
+    .header .navbar a{color:var(--black);   margin: 20px;   font-size: 22px;
                       display: block;       padding: 10px;}
 
-    .header .icons div{height: 40px;   width: 40px;   line-height: 40px;
-					   font-size: 28px;}}
+    .header .icons div{height: 30px;   width: 30px;   line-height: 30px;
+					   font-size: 24px;}}
 
 /*-------------- search -----------------*/  
 
@@ -89,7 +89,7 @@ a{text-decoration: none;}
                      border-radius: 6px;   display: flex;
                      align-items: center;  box-shadow: var(--box-shadow);}
 
-.header .search-form.active{right: 10px;   transition: var(--tran) linear;}
+.header .search-form.active{right: 30px;   transition: var(--tran) linear;}
 
 .header .search-form input{height: 100%;   width: 100%;   background: none;
                            text-transform: none;          font-size: 20px;
@@ -98,11 +98,9 @@ a{text-decoration: none;}
 
 .header .search-form label{font-size: 30px;      padding-right: 20px;
                            color:var(--black);   cursor: pointer;
-transition: var(--tran);}
+                           transition: var(--tran);}
 
 .header .search-form label:hover{color:var(--orange);}
-
-@media (max-width:768px){.header .search-form{width: 90%;}}
 
 /*-------------- shopping -----------------*/
 
@@ -111,7 +109,7 @@ transition: var(--tran);}
                        box-shadow: var(--box-shadow);   background: #fff;
                        width: 420px;                    height: 440px;}
 
-.header .shopping-cart.active{right: 10px;   transition: var(--tran) linear;}
+.header .shopping-cart.active{right: 30px;   transition: var(--tran) linear;}
 
 .header .shopping-cart .box{display: flex;  align-items: center;  gap: 30px;
                             position: relative;   margin: 10px 0;}
@@ -138,8 +136,6 @@ transition: var(--tran);}
 
 .header .shopping-cart .btn{display: block;  text-align: center; margin: 20px;}
 
-@media (max-width:768px){.header .shopping-cart{width: 390px;}}
-
 /*-------------- login -----------------*/
 
 .header .login-form{position: absolute;   top: 110%;   right: -250%;
@@ -148,7 +144,7 @@ transition: var(--tran);}
                     border-radius: 6px;                background: #fff;
                     width: 350px;                      height: 400px;}
 
-.header .login-form.active{right: 10px;  transition: var(--tran) linear;}
+.header .login-form.active{right: 30px;  transition: var(--tran) linear;}
 
 .header .login-form h3{font-size: 30px;   text-transform: uppercase;
                        color: var(--black);}
@@ -162,11 +158,48 @@ transition: var(--tran);}
 
 .header .login-form p a{color:var(--orange);  text-decoration: underline;}
 
+/*-------------------------- mobile ---------------------*/
+
+@media (max-width:768px){.header .search-form{width: 70%;}
+	
+    .header .search-form{position: absolute;   top: 110%;         right: -110%;
+                     width: 50%;           height: 50%;       background: #fff;
+                     border-radius: 6px;   display: flex;
+                     align-items: center;  box-shadow: var(--box-shadow);}
+
+    .header .search-form.active{right: 60px;
+		                        transition: var(--tran) linear;}}
+
+
+@media (max-width:768px){.header .shopping-cart{width: 320px;}
+	
+         .header .shopping-cart{position: absolute;              top: 110%;  
+                       border-radius: 6px;              right: -110%;
+                       box-shadow: var(--box-shadow);   background: #fff;
+                       width: 420px;                    height: 440px;}
+
+         .header .shopping-cart.active{right: 60px;
+			                 transition: var(--tran) linear;}}
+
+
+@media (max-width:768px){.header .login-form{width: 320px;}
+	
+       .header .login-form{position: absolute;   top: 110%;   right: -110%;
+                    width: 500px;                      height: 500px;   
+                    box-shadow: var(--box-shadow);     text-align: center;
+                    border-radius: 6px;                background: #fff;
+                    width: 350px;                      height: 400px;}
+
+       .header .login-form.active{right: 60px;
+		       transition: var(--tran) linear;}
+	
+      .header .login-form .box{width: 70%}}
+
 /*----------------------------- landing --------------------------------*/
 
 
 .home{min-height: 100vh;   display: flex;   align-items: center;
-      background:url(../photo/banner-bg.webp) no-repeat center;
+      background: #eee;
       background-size: cover;    justify-content: center;}
 
 .home .content{text-align: center;}
@@ -455,7 +488,7 @@ transition: var(--tran);}
 .footer .boxs .box .share a{height: 50px; width: 50px;  text-align: center;
                             line-height: 50px;          border-radius: 6px;
                             font-size: 30px;            color: var(--black);
-                            margin-right: 5px;         background: #eee;
+                            margin-right: 5px;          background: #eee;
                             transition: var(--tran);}
 
 .footer .boxs .box .share a:hover{background: var(--orange);   color: #fff;}
@@ -463,6 +496,9 @@ transition: var(--tran);}
 .footer .boxs .box .email{padding: 10px;   border: 0;   font-size: 20px; 
                           border-radius: 6px;           background: #f2f2f2;
                           color:var(--black);           text-transform: none;}
+
+@media (max-width: 768px){.footer .boxs .box .email{width: 70%}}
+
 
 .footer .boxs .box .payment-img{margin-top: 20px;   display: block;}
 
